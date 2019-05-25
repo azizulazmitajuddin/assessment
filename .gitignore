@@ -1,0 +1,9 @@
+.expo
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+internals/generators
+coverage
+build
+stats.json
