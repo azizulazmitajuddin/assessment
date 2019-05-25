@@ -7,3 +7,4 @@ internals/generators
 coverage
 build
 stats.json
+android/.gradle
