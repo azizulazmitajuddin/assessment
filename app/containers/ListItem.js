@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
   container: {
     width: "100%",
     marginTop: 5,
+    paddingLeft: 10,
     paddingBottom: 10,
     color: "black",
     fontSize: 17,
