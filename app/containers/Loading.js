@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 
 let Laoading = ({ loading }) =>
   loading ? (
-    <View style={{ textAlign: "center" }}>
+    <View style={{ width: "100%", textAlign: "center", alignItems: "center" }}>
       <Image source={require("../images/loading_spinner.gif")} />
       <Text>LOADING</Text>
     </View>

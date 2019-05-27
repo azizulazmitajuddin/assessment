@@ -1,21 +1,22 @@
 import React, { Component } from "react";
-import { View } from "react-native";
+import { connect } from "react-redux";
 
-import PullItem from "../containers/PullItem";
-import Loading from "../containers/Loading";
-import NewsItem from "../containers/NewsItem";
+import AppNavigator from "./Navigator";
 
 type Props = {};
 class Main extends Component<Props> {
   render() {
-    return (
-      <View>
-        <PullItem />
-        <Loading />
-        <NewsItem />
-      </View>
-    );
+    return <AppNavigator />;
   }
 }
+
+const mapStateToProps = state => ({
+  item: state.news
+});
+
+Main = connect(
+  mapStateToProps,
+  null
+)(Main);
 
 export default Main;
